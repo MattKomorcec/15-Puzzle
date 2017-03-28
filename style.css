@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: lightslategray;
+    background-image: url('concrete_wall.png');
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.6em;
+}
+
+.puzzle-holder {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.one-piece {
+    background: #b82601;
+    width: 146px;
+    height: 146px;
+    float: left;
+    text-align: center;
+    line-height: 146px;
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+    margin: 2px;
+    box-shadow: 5px 5px 20px #000;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.empty-tile {
+    background: #813772;
+}
+
+.one-piece.animate {
+    background: lightslategray;
+    opacity: 0.1;
+    color: #fff;
+}
+
+#options-holder {
+    width: 100%;
+    text-align: center;
+}
+
+#options-holder button {
+    margin: auto 10px;
+    width: 100px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #813772;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 4px solid;
+    transition: all .35s;
+}
+
+#options-holder button:hover {
+    background: #fff;
+    border: 4px solid #813772;
+    border-radius: 5px;
+    color: #813772;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
