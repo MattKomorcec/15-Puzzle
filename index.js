@@ -53,7 +53,7 @@ window.onload = function () {
         puzzlePiece.innerHTML = tile;
         if (isEmpty) {
             puzzlePiece.className += " empty-tile";
-            puzzlePiece.innerHTML = "";
+            puzzlePiece.innerHTML = "&nbsp";
         }
 
         puzzlePiece.onclick = move.bind(this, tile);
